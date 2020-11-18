@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" 
+        content="user-scalable=no, initial-scale=1, 
+                 maximum-scale=1, minimum-scale=1, 
+                 width=device-width, height=device-height,
+                viewport-fit=cover">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <title>robo control hub</title>
+  <style>
+     body
+     {
+         background-color: #111;
+         color: #aaa;
+     } 
+     hr
+     {
+         border-color: #449;
+         width: 80%;
+         border-width: thin;
+     }
+     .row
+     {
+         padding-top:10px;
+         padding-bottom: 10px;
+     }
+     .center
+     {
+         text-align:center;
+     }
+     .outer
+     {
+         padding: 10px;
+         margin: 10px;
+         border-width: 1px;
+         border-style: solid;
+         border-color: #44f;
+     }
+     .padded
+     {
+         padding: 10px;
+     }
+     input[type="number"]
+     {
+         width: 5em;
+     }
+     input
+     {
+         padding-left: 5px;
+     }
+  </style>
+</head>
+
+<body>
+<div class="outer">
+
+<div class="center">
+    <img src="SpartronicsLogo.png" style="width:50%;max-width:350px"/>
+    <h1>robo control hub</h1>
+</div>
+<hr />
+
+<form action='/esp' method='POST'>
+ <div class="center">
+   <div class="row">
+    <label for="led">LED</label>
+    <input type="checkbox" name="led"> <!-- checkboxes in forms are weird -->
+   </div>
+   <div class="row">
+    <input type='submit' value='Update esp8266'>
+   </div>
+ </div>
+</form>
+
+<hr />
+
+<form action='/ard' method='POST'>
+ <div class="center">
+   <div class="row">
+    <label for="led">LED</label>
+    <input type="checkbox" name="led">
+   </div>
+
+   <div class="row">
+    <label for="M1">M1</label>
+    <input type="number" name="M1" value="0" step=".01" min="-1" max="1">
+     &nbsp;
+    <label for="M2">M2</label>
+    <input type="number" name="M2" value="0" step=".01" min="-1" max="1">
+   </div>
+
+   <div class="row">
+    <input type='submit' value='Update arduino'>
+   </div>
+ </div>
+</form>
+
+</div>
+
+</body>
+
+</html>
