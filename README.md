@@ -31,7 +31,7 @@ Getting started:
 Going beyond:
 
 * connect your arduino pins to real sensors and motors
-* update the commcs protocol to support your devices
+* update the comms/websocket protocol to support your devices
 * develop a front end that connects to the websocket
 * create autonomous and user-controlled programs
 
