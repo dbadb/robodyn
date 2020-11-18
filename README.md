@@ -16,3 +16,22 @@ parse control messages.
 I've built these using a custom build environment, `jsmk`.  It should be possible to build
 and deploy these examples with the generic ESP toolset and the standard Arduino board.
 More configuration notes can be found in the associated projects.
+
+Getting started:
+
+* configure your build environment for both ESP8266 and Arduino-UNO
+* make sure you have the correct websockets library for ESP8266, build it with debugging disabled
+* deploy the robodyn and accessPointWS project with the appropriate DIP settings
+* start the robodyn
+* connect via the wifi net
+* look at the serial output associated with your COM port (Arduino IDE should work)
+* cd esp8266/accesspointWS
+* python blinky.py (make lights blink and pings the arduino for machine state)
+
+Going beyond:
+
+* connect your arduino pins to real sensors and motors
+* update the commcs protocol to support your devices
+* develop a front end that connects to the websocket
+* create autonomous and user-controlled programs
+
