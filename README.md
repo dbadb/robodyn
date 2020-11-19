@@ -1,11 +1,9 @@
 # robodyn
-dabbling with robodyn
 
-https://robotdyn.com/uno-wifi-r3-atmega
+[dabbling with robodyn](https://docs.google.com/presentation/d/1pR-GWibRpY5YUyJdgLA0I1OqRzdq0XbG7Jeu1yraSqM/edit?usp=sharing),
+a project to program a Tetrix robot.
 
-https://docs.google.com/presentation/d/1pR-GWibRpY5YUyJdgLA0I1OqRzdq0XbG7Jeu1yraSqM/edit?usp=sharing
-
-This part is comprised of two programable units: esp8266 for wifi and arduino-uno for robot control.
+[This robotdyn part](https://robotdyn.com/uno-wifi-r3-atmega) is comprised of two programable units: esp8266 for wifi and arduino-uno for robot control.
 
 On the esp8266 side, we have two examples: accessPoint and accessPointWS. The former uses
 http + POST as the control mechanism.  The latter uses websockets.  Websockets offer significant
